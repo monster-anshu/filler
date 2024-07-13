@@ -64,7 +64,7 @@ function Card({ template, title, preDefined }: CardProps) {
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(template);
+      await navigator.clipboard.writeText(replaceVariables(template, record));
       toast.success("Copied to clipboard");
     } catch (error) {
       toast.error("Can not copy text");
