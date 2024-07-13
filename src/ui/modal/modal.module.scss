@@ -1,0 +1,15 @@
+.modal {
+  animation: openAnimation 200ms ease-in-out 0s forwards;
+}
+
+@keyframes openAnimation {
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
+}
